@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "start": "node index.js",
     "devStart": "nodemon server.js",
     "devStartAuth": "nodemon authServer.js",
