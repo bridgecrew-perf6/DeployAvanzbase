@@ -1,0 +1,42 @@
+.youtube {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f7ff;
+  height: 100vh;
+}
+
+.youtube-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 1500px;
+  align-items: center;
+  gap: 20px;
+}
+
+.youtube-search-bar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.videos-container {
+  display: flex;
+  align-items: center;
+  flex-basis: 1;
+  gap: 50px;
+}
+
+.video-detail {
+  flex: 0.9;
+}
+
+.video-list {
+  flex: 0.1;
+}
+
+@media screen and (max-width: 1070px) {
+  .videos-container {
+    flex-direction: column;
+  }
+}

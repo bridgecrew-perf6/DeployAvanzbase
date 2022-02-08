@@ -1,0 +1,27 @@
+.news-row {
+  display: flex;
+  margin: 10px 0;
+}
+
+.news-row:hover {
+  background-color: rgba(225, 225, 225, 0.535);
+  cursor: pointer;
+}
+
+.news-img {
+  height: 55px;
+  width: 50px;
+  flex: 0.1;
+}
+
+.news-text-field {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  flex: 0.9;
+}
+
+.news-text-field p {
+  font-size: 0.9em;
+  color: gray;
+}

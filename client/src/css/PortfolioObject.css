@@ -1,0 +1,131 @@
+.portfolio-object {
+  align-items: center;
+  text-align: center;
+  border: #9381ff solid 2px;
+  background-color: #b8b8ff33;
+  border-radius: 10px;
+}
+
+.portfolio-object:hover {
+  cursor: pointer;
+}
+
+.portfolio-object-container {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 50px;
+}
+
+.portfolio-name {
+  width: 200px;
+  flex-grow: 1;
+}
+
+.portfolio-stocks {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.portfolio-videos {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.portfolio-coins {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.portfolio-comment {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+@media screen and (max-width: 960px) {
+  .portfolio-coins {
+    width: 100px;
+  }
+  .portfolio-stocks {
+    width: 100px;
+  }
+  .portfolio-videos {
+    width: 130px;
+  }
+  .portfolio-comment {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .portfolio-coins {
+    width: 60px;
+  }
+  .portfolio-stocks {
+    width: 80px;
+  }
+  .portfolio-videos {
+    width: 80px;
+  }
+  .portfolio-comment {
+    width: 130px;
+  }
+}
+
+.portfolio-link-object {
+  text-decoration: none;
+  color: white;
+  border-bottom: rgba(250, 250, 250, 0.72) 1px solid;
+}
+
+.boxclose {
+  cursor: pointer;
+  color: #fff;
+  border: transparent;
+  margin-top: 0;
+  text-align: center;
+  color: red;
+  background: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+}
+
+.boxclose:before {
+  content: "×";
+}
+
+.add-comment-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px white solid;
+  font-size: 15px;
+  padding: 2px;
+  margin-left: 15px;
+}
+
+.add-comment-btn:hover {
+  background-color: white;
+  color: #9381ff;
+}

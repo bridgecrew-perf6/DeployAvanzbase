@@ -1,0 +1,35 @@
+.stocks-and-funds {
+  margin-top: 50px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.stocks-and-funds-container {
+  gap: 15px;
+  width: 1700px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .stocks-and-funds-container {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 820px;
+  }
+  .stocks-and-funds {
+    padding: 20px;
+  }
+}

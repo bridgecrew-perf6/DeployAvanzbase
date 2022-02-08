@@ -1,0 +1,157 @@
+.coin-row {
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: center;
+  cursor: pointer;
+  height: 80px;
+}
+
+.coin-item {
+  padding-right: 50px;
+  flex-basis: 30%;
+  align-items: center;
+  display: flex;
+}
+
+.coin-item img {
+  height: 35px;
+  width: 35px;
+  margin: 15px;
+}
+
+.coin-item h1 {
+  font-size: 16px;
+  margin: 20px;
+}
+
+.coin-item p {
+  text-transform: uppercase;
+  opacity: 80%;
+  color: rgb(133, 133, 133);
+}
+
+.coin-row-data {
+  display: flex;
+  width: 100%;
+  font-size: 16px;
+}
+
+.coin-row-data p {
+  padding-right: 24px;
+  flex-grow: 1;
+  flex-basis: 100%;
+  text-align: right;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1270px) {
+  .coin-row-data {
+    font-size: 15px;
+  }
+  .coin-row-data p {
+    padding-right: 20px;
+  }
+  .coin-item img {
+    height: 32px;
+    width: 32px;
+    margin: 13px;
+  }
+  .coin-item h1 {
+    font-size: 15px;
+    margin: 18px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .coin-row-data {
+    font-size: 14px;
+  }
+  .coin-row-data p {
+    padding-right: 16px;
+  }
+  .coin-item {
+    padding-right: 40px;
+  }
+  .coin-item img {
+    height: 29px;
+    width: 29px;
+    margin: 11px;
+  }
+  .coin-item h1 {
+    font-size: 15px;
+    margin: 16px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .coin-row-data {
+    font-size: 13px;
+  }
+  .coin-row-data p {
+    padding-right: 12px;
+  }
+  .coin-item {
+    padding-right: 30px;
+  }
+  .coin-item img {
+    height: 26px;
+    width: 26px;
+    margin: 9px;
+  }
+  .coin-item h1 {
+    font-size: 14px;
+    margin: 14px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .coin-row-data {
+    font-size: 13px;
+  }
+  .coin-row-data p {
+    padding-right: 8px;
+  }
+  .coin-item {
+    padding-right: 20px;
+  }
+  .coin-item img {
+    height: 22px;
+    width: 22px;
+    margin: 7px;
+  }
+  .coin-item h1 {
+    font-size: 14px;
+    margin: 12px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .coin-row-data {
+    font-size: 12px;
+  }
+  .coin-row-data p {
+    padding-right: 0px;
+  }
+  .coin-item {
+    padding-right: 10px;
+  }
+  .coin-item img {
+    height: 16px;
+    width: 16px;
+    margin: 4px;
+  }
+  .coin-item h1 {
+    font-size: 13px;
+    margin: 10px;
+  }
+}

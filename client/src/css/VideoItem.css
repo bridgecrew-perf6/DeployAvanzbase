@@ -1,0 +1,23 @@
+.video-item {
+  display: flex;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.video-item.item img {
+  max-width: 180px;
+}
+
+.video-item-title {
+  width: 250px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1070px) {
+  .video-item.item img {
+    max-width: 220px;
+  }
+  .video-item-title {
+    font-size: 18px;
+  }
+}

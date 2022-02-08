@@ -1,0 +1,56 @@
+.about-us-page {
+  background-color: #b8b8ff;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 150px;
+  padding-left: 250px;
+}
+
+.about-us {
+  display: flex;
+  width: 600px;
+  height: 500px;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #9381ff;
+  border-radius: 110px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.about-us-container {
+  width: 500px;
+  margin-top: 20px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.how-it-works {
+  margin-top: 40px;
+}
+
+.list-items {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .about-us-page {
+    padding-left: 100px;
+  }
+  .about-us {
+    width: 450px;
+  }
+  .about-us-container {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about-us-page {
+    padding-left: 20px;
+  }
+}

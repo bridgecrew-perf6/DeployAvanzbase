@@ -1,0 +1,30 @@
+.btn-navbar {
+  padding: 8px 20px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0.5rem 1rem;
+}
+
+.sign-in {
+  border: 2px solid #f8f7ff;
+  width: 130px;
+  color: #f8f7ff;
+  background-color: #9381ff;
+}
+.sign-up {
+  border: 2px solid #f8f7ff;
+  width: 130px;
+  color: #9381ff;
+  background-color: #f8f7ff;
+}
+
+.btn-navbar.sign-in:hover {
+  border: 2px solid #f8f7ff98;
+  color: #f8f7ffd2;
+}
+.btn-navbar.sign-up:hover {
+  border: 2px solid #f8f7ff98;
+  background-color: #f8f7ffd2;
+}

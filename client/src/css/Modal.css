@@ -1,0 +1,89 @@
+.portfolio-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: sans-serif;
+}
+
+.portfolio-textarea {
+  height: 200px;
+  background-color: #b8b8ff;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  resize: none;
+  outline: none;
+}
+
+.portfolio-textarea::placeholder {
+  color: white;
+}
+
+.portfolio-textarea:focus {
+  background-color: #9381ff;
+}
+
+.modal-input {
+  background-color: #b8b8ff;
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  border: 1px white solid;
+  outline: none;
+}
+
+.modal-input:focus {
+  background-color: #9381ff;
+}
+
+.modal-input::placeholder {
+  color: white;
+}
+
+.modal-button {
+  background-color: #b8b8ff;
+  width: 130px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  border: 2px white solid;
+}
+
+.modal-button:hover {
+  background-color: #9381ff;
+}
+
+.add-object-button {
+  background-color: #b8b8ff;
+  width: 30px;
+  font-size: 20px;
+  height: 30px;
+  color: white;
+  border-radius: 15px;
+  border: 2px white solid;
+}
+
+.add-object-button:hover {
+  background-color: #9381ff;
+}
+
+.portfolio-add-row {
+  color: white;
+  display: flex;
+  width: 250px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  border-bottom: 1px #f8f7ff83 solid;
+}
+
+.portfolio-add-list {
+  max-height: 500px;
+  overflow: auto;
+  margin-bottom: 20px;
+}

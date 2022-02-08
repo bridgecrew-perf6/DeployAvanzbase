@@ -1,0 +1,29 @@
+.video-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-player {
+  width: 672px;
+  height: 378px;
+}
+
+.details-header-container {
+  width: 500px;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .video-player {
+    width: 632px;
+    height: 348px;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .video-player {
+    width: 480px;
+    height: 270px;
+  }
+}

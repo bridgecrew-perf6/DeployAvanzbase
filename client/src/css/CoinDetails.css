@@ -1,0 +1,119 @@
+.coin-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.details-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.coins-title-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 15px;
+}
+
+.details-title img {
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+}
+
+.details-title h2 {
+  padding-top: 6px;
+  color: rgb(112, 112, 112);
+}
+
+.details-container {
+  border: rgb(184, 184, 184) 1px solid;
+  padding: 10px 25px;
+}
+
+@media screen and (max-width: 560px) {
+  .details-title img {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+  }
+
+  .coins-title-left h1 {
+    font-size: 30px;
+  }
+
+  .details-title h2 {
+    font-size: 20px;
+  }
+}
+
+.price-percentage-title {
+  display: flex;
+}
+
+.price-percentage-title p {
+  margin: 0px 10px;
+  font-size: 1.5em;
+}
+
+.price-percentage-title h1 {
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.market-stats-container {
+  display: grid;
+  gap: 15px;
+  grid-template-areas:
+    "market-stats-title . . ."
+    "market-cap volume-24h circulating-supply total-supply"
+    "ath popularity . . "
+    "high-24h low-24h price-change-24h .";
+}
+
+.market-stats-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  grid-area: market-stats-title;
+}
+
+.market-stats-container p {
+  margin: 5px;
+}
+
+.total-supply {
+  grid-area: total-supply;
+}
+.market-cap {
+  grid-area: market-cap;
+}
+
+.ath {
+  grid-area: ath;
+}
+.volume-24h {
+  grid-area: volume-24h;
+}
+.circulating-supply {
+  grid-area: circulating-supply;
+}
+.popularity {
+  grid-area: popularity;
+}
+.high-24h {
+  grid-area: high-24h;
+}
+.low-24h {
+  grid-area: low-24h;
+}
+.price-change-24h {
+  grid-area: price-change-24h;
+}
+.price-change-7d {
+  grid-area: price-change-7d;
+}

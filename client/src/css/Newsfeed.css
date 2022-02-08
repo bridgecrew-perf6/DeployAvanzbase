@@ -1,0 +1,11 @@
+.newsfeed {
+  flex: 0.7;
+}
+.newsfeed-chartSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsfeed-chart {
+  width: 100%;
+}

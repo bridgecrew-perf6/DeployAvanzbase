@@ -1,0 +1,64 @@
+.search-bar-container {
+  margin: 40px 40px;
+}
+
+.search-bar-crypto input {
+  width: 30em;
+  height: 3em;
+  border-radius: 10px;
+  border: 1px solid rgb(216, 216, 216);
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-bar-crypto {
+  margin: 30px 0;
+}
+
+.search-bar-stocks input {
+  width: 17em;
+  height: 2em;
+  border: none;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+
+.search-bar-videos input {
+  width: 17em;
+  height: 2.1em;
+  border: none;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  border: rgb(191, 191, 191) 1px solid;
+}
+
+.search-bar-videos {
+  margin-top: 20px;
+}
+
+.search-bar-layout {
+  display: flex;
+  justify-content: center;
+}
+.search-button {
+  border: none;
+  border-radius: 0 12px 12px 0;
+}
+
+.fa-search {
+  background-color: #9381ff;
+  color: white;
+  padding: 3.6px 10px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
+
+.fa-search:hover {
+  opacity: 0.8;
+  transition: 0.1s;
+}

@@ -1,0 +1,36 @@
+.stats {
+  display: flex;
+  flex: 0.2;
+  flex-direction: column;
+  padding: 0px 30px 30px 30px;
+  color: black;
+}
+
+.stats-container {
+  flex-direction: column;
+  flex: 1;
+  background-color: #f8f7ff;
+  border-radius: 5px;
+  border: 1px solid #99a3b1;
+  width: 360px;
+}
+
+.stats-header {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #b3babf;
+  padding: 20px 20px 10px 20px;
+  font-weight: 500;
+}
+
+.search-result-box {
+  height: 75px;
+  overflow-y: auto;
+}
+
+.popular-stocks {
+  height: 400px;
+  overflow-y: auto;
+}
