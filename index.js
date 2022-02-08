@@ -7,24 +7,36 @@ const cors = require("cors");
 const mysql = require("mysql");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
+const path = require("path");
 
 // hashing algorithm
 const bcrypt = require("bcrypt");
 const salt = 10;
 // port for heroku if needed
-const PORT = 3001;
+const PORT = 8080;
 
-// app objects instantiated on creation of the express server
-app.use(
-  cors({
-    origin: [
-      "https://upbeat-northcutt-4650a4.netlify.app",
-      "http://localhost:3000",
-    ],
-    methods: ["GET", "POST", "DELETE"],
-    credentials: true,
-  })
-);
+// ** MIDDLEWARE ** //
+const whitelist = [
+  "http://localhost:3000",
+  "http://localhost:8080",
+  "https://avanzbase-deploy.herokuapp.com",
+];
+const corsOptions = {
+  origin: function (origin, callback) {
+    console.log("** Origin of request " + origin);
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      console.log("Origin acceptable");
+      callback(null, true);
+    } else {
+      console.log("Origin rejected");
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST", "DELETE"],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -713,6 +725,16 @@ app.delete("/delete-account", authenticateAccessToken, async (req, res) => {
     return res.status(401);
   }
 });
+
+// display react to the browser
+if (process.env.NODE_ENV === "production") {
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, "client/build")));
+  // Handle React routing, return all requests to React app
+  app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "client/build", "index.html"));
+  });
+}
 
 app.listen(process.env.PORT || PORT, () => {
   console.log(`Server running on port ${PORT}`);
