@@ -19,7 +19,7 @@ const PORT = 8080;
 const whitelist = [
   "http://localhost:3000",
   "http://localhost:8080",
-  "https://avanzbase-deploy.herokuapp.com",
+  "https://avanzbase.herokuapp.com",
 ];
 const corsOptions = {
   origin: function (origin, callback) {
