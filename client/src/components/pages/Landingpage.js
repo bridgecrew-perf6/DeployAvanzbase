@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/LandingPage.css";
+import "../../css/Landingpage.css";
 import ImageCard from "../utils/ImageCard";
 
 const Landingpage = () => {
