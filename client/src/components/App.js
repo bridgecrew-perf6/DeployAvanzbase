@@ -13,6 +13,7 @@ import AboutUs from "./pages/AboutUs";
 import Youtube from "./pages/youtube/Youtube";
 import { UserContext } from "./UserContext";
 import { GetUserInfo, RefreshToken } from "../api/AuthenticateUser";
+import { GetCurrentUser } from "../api/ProfileApi";
 import Landingpage from "./pages/Landingpage";
 
 // checks if user stored in context
@@ -76,7 +77,8 @@ const App = () => {
       if (typeof responseData != "undefined") {
         if (responseData.data === "Unauthorized") setContextUser(null);
         else if (responseData != null) {
-          setContextUser(responseData.data);
+          const profileData = await GetCurrentUser(responseData.data.email);
+          setContextUser(profileData.data);
         }
       }
       setLoadContext(true);

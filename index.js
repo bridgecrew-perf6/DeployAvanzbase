@@ -96,8 +96,6 @@ app.post("/refresh-token", (req, res) => {
       res.cookie("access-token", accessToken, {
         maxAge: 1000 * 60 * 60, // 1 hour
         httpOnly: true, // hinder doing document.cookies as it will be httpOnly which will make it more safe
-        secure: true,
-        sameSite: "none",
       });
       res.send(user[0]);
     });
@@ -118,13 +116,9 @@ app.delete("/logout", (req, res) => {
     // delete all cookies
     res.clearCookie("access-token", {
       httpOnly: true, // hinder doing document.cookies as it will be httpOnly which will make it more safe
-      secure: true,
-      sameSite: "none",
     });
     res.clearCookie("refresh-token", {
       httpOnly: true, // hinder doing document.cookies as it will be httpOnly which will make it more safe
-      secure: true,
-      sameSite: "none",
     });
     res.end();
   });
@@ -175,14 +169,10 @@ app.post("/sign-in", (req, res) => {
           res.cookie("access-token", accessToken, {
             maxAge: 1000 * 60 * 30, // 30 min
             httpOnly: true, // hinder doing document.cookies as it will be httpOnly which will make it more safe
-            secure: true,
-            sameSite: "none",
           });
           res.cookie("refresh-token", refreshToken, {
             maxAge: 2.63e9, // approx 1 month
             httpOnly: true,
-            secure: true,
-            sameSite: "none",
           });
 
           // update refresh token in database
